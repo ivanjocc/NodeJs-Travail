@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perfil de usuario</title>
+    <!-- Aquí puedes incluir etiquetas <link> y <script> para cargar estilos y scripts externos -->
+  </head>
+  <body>
+    <h1>Perfil de usuario</h1>
+
+    <!-- Aquí puedes mostrar información específica del usuario -->
+    <h2>Nombre: <%= user.name %></h2>
+    <p>Email: <%= user.email %></p>
+
+    <!-- Aquí puedes permitir al usuario realizar cambios en su perfil -->
+    <form action="/profile" method="POST">
+      <input type="text" name="name" value="<%= user.name %>" />
+      <input type="email" name="email" value="<%= user.email %>" />
+      <button type="submit">Guardar cambios</button>
+    </form>
+
+    <!-- Aquí puedes mostrar otras secciones o estadísticas del perfil -->
+
+    <!-- Aquí puedes incluir etiquetas <script> para scripts internos -->
+  </body>
+</html>
